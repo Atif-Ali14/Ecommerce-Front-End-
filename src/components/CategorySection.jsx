@@ -1,0 +1,62 @@
+import { Link } from "react-router-dom";
+import MenImg from "../assets/images/men.png";
+import WomenImg from "../assets/images/women.png";
+import KidsImg from "../assets/images/kids.png";
+
+export default function CategorySection() {
+  const categories = [
+    {
+      title: "Men",
+      slug: "men",
+      img: MenImg,
+      bg: "bg-blue-300",
+    },
+    {
+      title: "Women",
+      slug: "women",
+      img: WomenImg,
+      bg: "bg-yellow-200",
+    },
+    {
+      title: "Kids",
+      slug: "kids",
+      img: KidsImg,
+      bg: "bg-pink-300",
+    },
+  ];
+
+  return (
+    <section className="px-6 py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {categories.map((item, index) => (
+          <Link
+            to={`/products?category=${item.slug}`}
+            key={index}
+            className="no-underline"
+          >
+            <div
+              className={`${item.bg} rounded-xl h-[280px] flex 
+              justify-between items-center px-6 cursor-pointer 
+              shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl`}
+            >
+              {/* Text */}
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-black/70 font-medium">View All</p>
+              </div>
+
+              {/* Image */}
+              <img
+                src={item.img}
+                alt={item.title}
+                className="h-[260px] object-contain drop-shadow-md"
+              />
+            </div>
+          </Link>
+        ))}
+      </div>
+    </section>
+  );
+}
