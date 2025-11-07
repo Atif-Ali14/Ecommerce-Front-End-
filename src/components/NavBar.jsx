@@ -43,33 +43,59 @@ export default function NavBar() {
 
   return (
     <header className="shadow-sm">
-      {/* Top Navbar */}
-      <nav style={{ backgroundColor: 'var(--midnight-navy)', color: 'var(--pure-white)' }} className="px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold hover:text-opacity-90">
-          Shopora
-        </Link>
+      {/* Top Navbar - Logo, Page Links, Search Bar */}
+      <nav style={{ backgroundColor: 'var(--midnight-navy)', color: 'var(--pure-white)' }} className="px-6 py-4">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <Link to="/" className="text-2xl font-bold hover:text-opacity-90">
+            Shopora
+          </Link>
 
-        {/* Search Bar */}
-        <div className="hidden md:flex items-center w-1/3 bg-cloud-gray rounded-md overflow-hidden border border-slate-gray">
-          <input
-            type="text"
-            placeholder="Search products..."
-            className="w-full px-3 py-2 text-primary-text outline-none bg-cloud-gray"
-            value={searchInput}
-            onChange={(e) => setSearchInput(e.target.value)}
-            onKeyPress={handleKeyPress}
-          />
+          {/* Page Links - Desktop - Centered */}
+          <div className="hidden md:flex items-center gap-8 font-medium absolute left-1/2 transform -translate-x-1/2">
+            <Link to="/" className="hover:text-shopora-blue hover:underline">
+              Home
+            </Link>
+            <Link to="/shop" className="hover:text-shopora-blue hover:underline">
+              Shop
+            </Link>
+            <Link to="/contact" className="hover:text-shopora-blue hover:underline">
+              Contact
+            </Link>
+            <Link to="/about" className="hover:text-shopora-blue hover:underline">
+              About
+            </Link>
+          </div>
+
+          {/* Search Bar */}
+          <div className="hidden md:flex items-center w-1/3 bg-cloud-gray rounded-full overflow-hidden border border-slate-gray">
+            <input
+              type="text"
+              placeholder="Search products..."
+              className="w-full px-4 py-2 text-primary-text outline-none bg-cloud-gray rounded-l-full"
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
+              onKeyPress={handleKeyPress}
+            />
+            <button
+              className="px-4 py-2 text-slate-gray hover:text-primary-text rounded-r-full"
+              onClick={handleSearch}
+            >
+              <FaSearch size={18} />
+            </button>
+          </div>
+
+          {/* Mobile Hamburger Button */}
           <button
-            className="px-4 py-2 text-slate-gray hover:text-primary-text"
-            onClick={handleSearch}
+            className="md:hidden text-pure-white"
+            onClick={() => setMenuOpen(!menuOpen)}
           >
-            <FaSearch size={18} />
+            {menuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
           </button>
         </div>
 
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+        {/* Second Row - Cart, Login, Register (Desktop) */}
+        <div className="hidden md:flex items-center justify-end gap-8 mt-4 pt-4 border-t border-slate-gray">
           <Link
             to="/cart"
             className="relative flex items-center gap-2 hover:text-opacity-90"
@@ -93,34 +119,34 @@ export default function NavBar() {
             </button>
           </div>
         </div>
-
-        {/* Mobile Hamburger Button */}
-        <button
-          className="md:hidden text-pure-white"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
-        </button>
       </nav>
 
       {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div style={{ backgroundColor: 'var(--midnight-navy)', color: 'var(--pure-white)' }} className="flex flex-col px-6 py-4 gap-4 border-t md:hidden">
+          {/* Page Links */}
+          <div className="flex flex-col gap-3">
+            <Link to="/" className="hover:text-shopora-blue" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link to="/shop" className="hover:text-shopora-blue" onClick={() => setMenuOpen(false)}>Shop</Link>
+            <Link to="/contact" className="hover:text-shopora-blue" onClick={() => setMenuOpen(false)}>Contact</Link>
+            <Link to="/about" className="hover:text-shopora-blue" onClick={() => setMenuOpen(false)}>About</Link>
+          </div>
+
           {/* Search Bar */}
           <form
             onSubmit={handleSearch}
-            className="flex items-center bg-cloud-gray rounded-md overflow-hidden border border-slate-gray"
+            className="flex items-center bg-cloud-gray rounded-full overflow-hidden border border-slate-gray"
           >
             <input
               type="text"
               placeholder="Search..."
-              className="w-full px-3 py-2 bg-cloud-gray outline-none text-primary-text"
+              className="w-full px-4 py-2 bg-cloud-gray outline-none text-primary-text rounded-l-full"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
             />
             <button
               type="submit"
-              className="px-4 py-2 text-slate-gray hover:text-primary-text"
+              className="px-4 py-2 text-slate-gray hover:text-primary-text rounded-r-full"
             >
               <FaSearch />
             </button>
@@ -155,32 +181,6 @@ export default function NavBar() {
           </button>
         </div>
       )}
-
-      {/* Bottom Navigation Menu */}
-      <div style={{ backgroundColor: 'var(--pure-white)'}} className="py-3 hidden md:block">
-        <ul className="flex items-center justify-center gap-8 font-medium text-secondary-text">
-          <li>
-            <Link to="/" className="hover:text-shopora-blue hover:underline">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop" className="hover:text-shopora-blue hover:underline">
-              Shop
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="hover:text-shopora-blue hover:underline">
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="hover:text-shopora-blue hover:underline">
-              About
-            </Link>
-          </li>
-        </ul>
-      </div>
 
       {/* Modals */}
       {showLogin && (
