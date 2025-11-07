@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-4">E-Shop</h2>
+          <h2 className="text-2xl font-bold text-white mb-4">Shopora</h2>
           <p className="text-sm text-gray-400">
             Your one-stop shop for latest products with best offers.
           </p>
@@ -80,7 +80,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="text-center mt-8 border-t border-gray-700 pt-4 text-sm text-gray-500">
-        © {new Date().getFullYear()} E-Shop. All rights reserved.
+        © {new Date().getFullYear()} Shopora. All rights reserved.
       </div>
     </footer>
   );
