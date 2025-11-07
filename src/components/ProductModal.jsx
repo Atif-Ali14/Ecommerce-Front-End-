@@ -27,13 +27,14 @@ export default function ProductModal({ product, onClose }) {
       onClick={onClose}
     >
       <div
-        className="bg-white p-6 rounded-lg max-w-md w-full mx-4 relative shadow-xl animate-fadeIn scale-100"
+        style={{ backgroundColor: 'var(--pure-white)' }}
+        className="p-6 rounded-lg max-w-md w-full mx-4 relative shadow-xl animate-fadeIn scale-100"
         onClick={(e) => e.stopPropagation()}
       >
         {/* ❌ Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-600 text-lg font-bold hover:text-black"
+          className="absolute top-3 right-3 text-slate-gray text-lg font-bold hover:text-primary-text"
         >
           ✕
         </button>
@@ -46,14 +47,14 @@ export default function ProductModal({ product, onClose }) {
         />
 
         {/* 📝 Product Info */}
-        <h2 className="text-2xl font-semibold mb-2 text-gray-800">
+        <h2 className="text-2xl font-semibold mb-2 text-primary-text">
           {product.name}
         </h2>
-        <p className="text-gray-700 mb-2">
+        <p className="text-secondary-text mb-2">
           Category: {product.category || "N/A"}
         </p>
-        <p className="text-red-500 font-bold text-xl">${product.price}</p>
-        <p className="text-gray-600 text-sm mt-2 mb-4 leading-relaxed">
+        <p style={{ color: 'var(--shopora-blue)' }} className="font-bold text-xl">${product.price}</p>
+        <p className="text-secondary-text text-sm mt-2 mb-4 leading-relaxed">
           {product.description}
         </p>
 
@@ -61,8 +62,8 @@ export default function ProductModal({ product, onClose }) {
         <button
           className={`mt-6 w-full py-2 rounded-lg transition-all ${
             isInCart
-              ? "bg-green-600 text-white cursor-default"
-              : "bg-gray-800 text-white hover:bg-gray-700"
+              ? "bg-emerald-green text-pure-white cursor-default"
+              : "bg-shopora-blue text-pure-white hover:bg-midnight-navy"
           }`}
           onClick={handleAddToCart}
           disabled={isInCart}

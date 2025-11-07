@@ -36,17 +36,17 @@ export default function ProductCard({ product, onImageClick }) {
   const emptyStars = totalStars - fullStars - (halfStar ? 1 : 0);
 
   return (
-    <div className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 p-4 flex flex-col items-center">
+    <div style={{ backgroundColor: 'var(--pure-white)' }} className="rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 p-4 flex flex-col items-center">
       <img
         src={image}
         alt={name}
         onClick={onImageClick}
         className="h-40 object-contain mb-4 cursor-pointer"
       />
-      <h3 className="font-semibold text-gray-800 mb-1">{name}</h3>
+      <h3 className="font-semibold text-primary-text mb-1">{name}</h3>
 
       {/* ⭐ Rating */}
-      <div className="flex text-yellow-500 mb-2 text-lg">
+      <div style={{ color: 'var(--sunrise-orange)' }} className="flex mb-2 text-lg">
         {Array(fullStars)
           .fill()
           .map((_, i) => (
@@ -60,13 +60,13 @@ export default function ProductCard({ product, onImageClick }) {
           ))}
       </div>
 
-      <p className="text-red-500 font-bold text-lg">${price}</p>
+      <p style={{ color: 'var(--shopora-blue)' }} className="font-bold text-lg">${price}</p>
 
       <button
         className={`mt-3 px-4 py-2 rounded-md transition-all ${
           isInCart
-            ? "bg-green-600 text-white cursor-default"
-            : "bg-gray-800 text-white hover:bg-blue-700"
+            ? "bg-emerald-green text-pure-white cursor-default"
+            : "bg-shopora-blue text-pure-white hover:bg-midnight-navy"
         }`}
         onClick={handleAddToCart}
         disabled={isInCart}

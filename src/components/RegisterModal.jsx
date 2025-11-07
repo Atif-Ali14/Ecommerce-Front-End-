@@ -22,19 +22,20 @@ export default function RegisterModal({ onClose, onLoginClick }) {
       onClick={onClose} // close when clicking outside
     >
       <div
-        className="bg-white rounded-lg shadow-xl p-6 w-full max-w-md relative"
+        style={{ backgroundColor: 'var(--pure-white)' }}
+        className="rounded-lg shadow-xl p-6 w-full max-w-md relative"
         onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
         {/* Close button */}
         <button
-          className="absolute top-3 right-3 text-gray-600 text-lg font-bold hover:text-black"
+          className="absolute top-3 right-3 text-slate-gray text-lg font-bold hover:text-primary-text"
           onClick={onClose}
         >
           ✕
         </button>
 
         {/* Header */}
-        <h2 className="text-2xl font-bold mb-4 text-center">Register</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center text-primary-text">Register</h2>
 
         {/* Form */}
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -43,7 +44,7 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Full Name"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
-            className="w-full border rounded-md p-2"
+            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
             required
           />
           <input
@@ -51,7 +52,7 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full border rounded-md p-2"
+            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
             required
           />
           <input
@@ -59,7 +60,7 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full border rounded-md p-2"
+            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
             required
           />
           <input
@@ -67,21 +68,22 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Confirm Password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            className="w-full border rounded-md p-2"
+            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
             required
           />
 
           {/* Register button */}
-          <button className="w-full bg-black text-white py-2 rounded-md hover:bg-green-700">
+          <button style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }} className="w-full py-2 rounded-md hover:bg-midnight-navy">
             Register
           </button>
         </form>
 
         {/* Login link */}
-        <p className="text-center text-sm mt-4">
+        <p className="text-center text-sm mt-4 text-secondary-text">
           Already have an account?{" "}
           <button
-            className="text-blue-600 hover:underline"
+            style={{ color: 'var(--shopora-blue)' }}
+            className="hover:underline"
             onClick={() => {
               onClose();
               onLoginClick(); // open login modal
