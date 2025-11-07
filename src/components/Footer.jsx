@@ -11,19 +11,22 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 mt-12">
+    <footer
+      style={{ backgroundColor: "var(--midnight-navy)", color: "var(--pure-white)" }}
+      className="py-10 mt-12"
+    >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-4">Shopora</h2>
-          <p className="text-sm text-gray-400">
+          <h2 className="text-2xl font-bold mb-4">Shopora</h2>
+          <p style={{ color: "var(--slate-gray)" }} className="text-sm">
             Your one-stop shop for latest products with best offers.
           </p>
         </div>
 
         {/* Links */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li>
               <Link to="/" className="hover:text-white">
@@ -50,7 +53,7 @@ export default function Footer() {
 
         {/* Categories */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Categories</h3>
+          <h3 className="text-lg font-semibold mb-4">Categories</h3>
           <ul className="space-y-2 text-sm">
             <li
               className="hover:text-white cursor-pointer"
@@ -72,14 +75,17 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Contact Us</h3>
+          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
           <p className="text-sm">Email: support@Shopora.com</p>
           <p className="text-sm mt-2">Phone: +92 300 1234567</p>
         </div>
       </div>
 
       {/* Bottom Bar */}
-      <div className="text-center mt-8 border-t border-gray-700 pt-4 text-sm text-gray-500">
+      <div
+        style={{ color: "var(--slate-gray)" }}
+        className="text-center mt-8 border-t border-gray-700 pt-4 text-sm"
+      >
         © {new Date().getFullYear()} Shopora. All rights reserved.
       </div>
     </footer>

@@ -9,19 +9,19 @@ export default function CategorySection() {
       title: "Men",
       slug: "men",
       img: MenImg,
-      bg: "bg-blue-300",
+      bg: "bg-shopora-blue",
     },
     {
       title: "Women",
       slug: "women",
       img: WomenImg,
-      bg: "bg-yellow-200",
+      bg: "bg-sunrise-orange",
     },
     {
       title: "Kids",
       slug: "kids",
       img: KidsImg,
-      bg: "bg-pink-300",
+      bg: "bg-emerald-green",
     },
   ];
 
@@ -41,10 +41,10 @@ export default function CategorySection() {
             >
               {/* Text */}
               <div>
-                <h3 className="text-2xl font-semibold text-gray-900">
+                <h3 className="text-2xl font-semibold text-primary-text">
                   {item.title}
                 </h3>
-                <p className="text-sm text-black/70 font-medium">View All</p>
+                <p className="text-sm text-secondary-text font-medium">View All</p>
               </div>
 
               {/* Image */}

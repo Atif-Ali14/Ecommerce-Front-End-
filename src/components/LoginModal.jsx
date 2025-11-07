@@ -17,19 +17,19 @@ export default function LoginModal({ onClose, onSignUpClick }) {
       onClick={onClose} // close when clicking outside
     >
       <div
-        className="bg-white rounded-lg shadow-xl p-6 w-full max-w-md relative"
+        className="bg-pure-white rounded-lg shadow-xl p-6 w-full max-w-md relative"
         onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
         {/* Close button */}
         <button
-          className="absolute top-3 right-3 text-gray-600 text-lg font-bold hover:text-black"
+          className="absolute top-3 right-3 text-slate-gray text-lg font-bold hover:text-primary-text"
           onClick={onClose}
         >
           ✕
         </button>
 
         {/* Header */}
-        <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+        <h2 className="text-2xl font-bold mb-4 text-center text-primary-text">Login</h2>
 
         {/* Form */}
         <form className="space-y-4" onSubmit={handleSubmit}>
@@ -62,11 +62,11 @@ export default function LoginModal({ onClose, onSignUpClick }) {
                 onChange={(e) => setRememberMe(e.target.checked)}
                 className="w-4 h-4"
               />
-              Remember me
+              <span className="text-secondary-text">Remember me</span>
             </label>
             <button
               type="button"
-              className="text-blue-600 hover:underline"
+              className="text-shopora-blue hover:underline"
               onClick={() => alert("Redirect to forgot password")}
             >
               Forgot Password?
@@ -74,16 +74,16 @@ export default function LoginModal({ onClose, onSignUpClick }) {
           </div>
 
           {/* Login Button */}
-          <button className="w-full bg-black text-white py-2 rounded-md hover:bg-blue-700">
+          <button className="w-full bg-shopora-blue text-pure-white py-2 rounded-md font-bold hover:bg-opacity-90">
             Login
           </button>
         </form>
 
         {/* Sign Up Link */}
-        <p className="text-center text-sm mt-4">
+        <p className="text-center text-sm mt-4 text-secondary-text">
           Don't have an account?{" "}
           <button
-            className="text-blue-600 hover:underline"
+            className="text-shopora-blue hover:underline"
             onClick={() => {
               onClose();
               onSignUpClick(); // open register modal

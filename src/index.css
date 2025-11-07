@@ -4,3 +4,15 @@ html,
 body {
   height: 100%;
 }
+
+:root {
+  --shopora-blue: #1E88E5;
+  --midnight-navy: #0D1B2A;
+  --sunrise-orange: #FF7043;
+  --emerald-green: #2ECC71;
+  --pure-white: #FFFFFF;
+  --cloud-gray: #F5F5F5;
+  --slate-gray: #607D8B;
+  --primary-text: #212121;
+  --secondary-text: #757575;
+}

@@ -11,18 +11,18 @@ export default function ChangeAddress({ currentAddress, onSave, onClose }) {
       onClick={onClose} // close modal when clicking outside
     >
       <div
-        className="bg-white p-6 rounded-lg w-96 shadow-xl animate-fadeIn scale-100 relative"
+        className="bg-pure-white p-6 rounded-lg w-96 shadow-xl animate-fadeIn scale-100 relative"
         onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-600 text-lg font-bold hover:text-black"
+          className="absolute top-3 right-3 text-slate-gray text-lg font-bold hover:text-primary-text"
         >
           ✕
         </button>
 
-        <h2 className="text-xl font-semibold mb-4">Change Address</h2>
+        <h2 className="text-xl font-semibold mb-4 text-primary-text">Change Address</h2>
         <textarea
           className="w-full p-2 border rounded-md mb-4"
           rows="4"
@@ -32,13 +32,13 @@ export default function ChangeAddress({ currentAddress, onSave, onClose }) {
         <div className="flex justify-end gap-2">
           <button
             onClick={onClose}
-            className="px-4 py-2 rounded-md bg-gray-300 hover:bg-gray-400"
+            className="px-4 py-2 rounded-md bg-cloud-gray hover:bg-slate-gray"
           >
             Cancel
           </button>
           <button
             onClick={() => onSave(newAddress)}
-            className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700"
+            className="px-4 py-2 rounded-md bg-shopora-blue text-pure-white hover:bg-opacity-90"
           >
             Save
           </button>
