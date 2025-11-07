@@ -47,7 +47,7 @@ export default function NavBar() {
       <nav className="bg-white text-black px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold hover:text-gray-700">
-          E-Shop
+          Shopora
         </Link>
 
         {/* Search Bar */}
