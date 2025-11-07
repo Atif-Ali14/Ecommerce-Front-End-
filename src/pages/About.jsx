@@ -11,7 +11,7 @@ export default function About() {
       {/* Content Section */}
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 text-gray-700 space-y-4">
         <p>
-          Welcome to <span className="font-semibold">E-Shop</span> — your
+          Welcome to <span className="font-semibold">Shopora</span> — your
           one-stop destination for quality products at the best prices. We
           believe in offering a seamless shopping experience with fast delivery
           and secure payment options.
@@ -29,7 +29,7 @@ export default function About() {
         </p>
 
         <p className="font-semibold text-gray-900">
-          Thank you for choosing E-Shop ❤️
+          Thank you for choosing Shopora ❤️
         </p>
       </div>
     </section>
