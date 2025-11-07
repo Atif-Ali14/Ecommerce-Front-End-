@@ -17,7 +17,7 @@ export default function LoginModal({ onClose, onSignUpClick }) {
       onClick={onClose} // close when clicking outside
     >
       <div
-        className="bg-pure-white rounded-lg shadow-xl p-6 w-full max-w-md relative"
+        className="bg-white rounded-lg shadow-xl p-6 w-full max-w-md relative"
         onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
       >
         {/* Close button */}
