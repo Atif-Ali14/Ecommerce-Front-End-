@@ -16,14 +16,14 @@ export default function Contact() {
           <p>If you have any questions or need help, feel free to reach out.</p>
 
           <p>
-            📍 <span className="font-medium">Address:</span> Shopora Center,
-            Karachi, Pakistan
+             <span className="font-medium">Address:</span> Shopora Center,
+            Islamabad, Pakistan
           </p>
           <p>
-            📞 <span className="font-medium">Phone:</span> +92 300 1234567
+             <span className="font-medium">Phone:</span> +92 300 1234567
           </p>
           <p>
-            ✉️ <span className="font-medium">Email:</span> support@Shopora.com
+             <span className="font-medium">Email:</span> support@Shopora.com
           </p>
         </div>
 
