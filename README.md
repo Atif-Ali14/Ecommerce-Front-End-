@@ -2,32 +2,6 @@ Ecommerce Front-End
 
 A modern and responsive front-end application built using React and Vite for an e-commerce platform. The project aims to provide a sleek, fast, and user-friendly shopping experience, designed to handle a wide range of products including electronics, fashion, and home appliances.
 
-Table of Contents
-
-About the Project
-
-Features
-
-Tech Stack
-
-Getting Started
-
-Prerequisites
-
-Installation
-
-Running the App
-
-Usage
-
-Future Improvements
-
-Contributing
-
-License
-
-Contact
-
 About the Project
 
 This repository contains the front-end of an e-commerce application developed using React and Vite.
@@ -57,7 +31,7 @@ Tech Stack
 
 Frontend Framework: React
 Build Tool: Vite
-Language: JavaScript (ES6+)
+Language: JavaScript
 Styling: Tailwind CSS or CSS Modules
 Routing: React Router
 State Management: React Context API
@@ -133,7 +107,7 @@ Dark mode and theme switching
 
 Enhanced accessibility (ARIA support)
 
-Deployment on Vercel or Netlify
+Deployment on Vercel
 
 Unit and integration testing using Jest
 
