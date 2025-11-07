@@ -62,11 +62,14 @@ export default function ProductCard({ product, onImageClick }) {
 
       <p style={{ color: 'var(--shopora-blue)' }} className="font-bold text-lg">${price}</p>
 
-      <button
+      <button        style={{
+          backgroundColor: isInCart ? 'var(--emerald-green)' : 'var(--sunrise-orange)',
+          color: 'var(--pure-white)'
+        }}
         className={`mt-3 px-4 py-2 rounded-md transition-all ${
           isInCart
             ? "bg-emerald-green text-pure-white cursor-default"
-            : "bg-shopora-blue text-pure-white hover:bg-midnight-navy"
+            : "bg-sunrise-orange text-pure-white hover:opacity-90"
         }`}
         onClick={handleAddToCart}
         disabled={isInCart}

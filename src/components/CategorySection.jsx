@@ -35,7 +35,8 @@ export default function CategorySection() {
             className="no-underline"
           >
             <div
-              className={`${item.bg} rounded-xl h-[280px] flex 
+              style={{ backgroundColor: `var(--${item.bg.replace('bg-','').replace('-','-')})` }}
+              className={`rounded-xl h-[280px] flex 
               justify-between items-center px-6 cursor-pointer 
               shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl`}
             >

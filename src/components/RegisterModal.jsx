@@ -44,7 +44,8 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Full Name"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
-            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
+            style={{ backgroundColor: 'var(--cloud-gray)', color: 'var(--primary-text)' }}
+            className="w-full border rounded-md p-2"
             required
           />
           <input
@@ -52,7 +53,8 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
+            style={{ backgroundColor: 'var(--cloud-gray)', color: 'var(--primary-text)' }}
+            className="w-full border rounded-md p-2"
             required
           />
           <input
@@ -60,7 +62,8 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
+            style={{ backgroundColor: 'var(--cloud-gray)', color: 'var(--primary-text)' }}
+            className="w-full border rounded-md p-2"
             required
           />
           <input
@@ -68,12 +71,13 @@ export default function RegisterModal({ onClose, onLoginClick }) {
             placeholder="Confirm Password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
-            className="w-full border rounded-md p-2 bg-cloud-gray text-primary-text"
+            style={{ backgroundColor: 'var(--cloud-gray)', color: 'var(--primary-text)' }}
+            className="w-full border rounded-md p-2"
             required
           />
 
           {/* Register button */}
-          <button style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }} className="w-full py-2 rounded-md hover:bg-midnight-navy">
+          <button style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }} className="w-full py-2 rounded-md hover:opacity-90">
             Register
           </button>
         </form>

@@ -68,17 +68,18 @@ export default function NavBar() {
           </div>
 
           {/* Search Bar */}
-          <div className="hidden md:flex items-center w-1/3 bg-cloud-gray rounded-full overflow-hidden border border-slate-gray">
+          <div style={{ backgroundColor: 'var(--cloud-gray)', borderColor: 'var(--slate-gray)' }} className="hidden md:flex items-center w-1/3 rounded-full overflow-hidden border">
             <input
               type="text"
-              placeholder="Search products..."
-              className="w-full px-4 py-2 text-primary-text outline-none bg-cloud-gray rounded-l-full"
+              style={{ backgroundColor: 'var(--cloud-gray)' }}
+              className="w-full px-4 py-2 text-primary-text outline-none rounded-l-full"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
               onKeyPress={handleKeyPress}
             />
             <button
-              className="px-4 py-2 text-slate-gray hover:text-primary-text rounded-r-full"
+              style={{ color: 'var(--slate-gray)' }}
+              className="px-4 py-2 hover:opacity-80 rounded-r-full"
               onClick={handleSearch}
             >
               <FaSearch size={18} />
@@ -102,7 +103,7 @@ export default function NavBar() {
           >
             <FaShoppingCart size={20} />
             {totalQuantity > 0 && (
-              <span className="absolute -top-2 -right-3 bg-sunrise-orange text-pure-white text-xs rounded-full px-2 py-0.5">
+              <span style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }} className="absolute -top-2 -right-3 text-xs rounded-full px-2 py-0.5">
                 {totalQuantity}
               </span>
             )}
@@ -135,18 +136,21 @@ export default function NavBar() {
           {/* Search Bar */}
           <form
             onSubmit={handleSearch}
-            className="flex items-center bg-cloud-gray rounded-full overflow-hidden border border-slate-gray"
+            style={{ backgroundColor: 'var(--cloud-gray)', borderColor: 'var(--slate-gray)' }}
+            className="flex items-center rounded-full overflow-hidden border"
           >
             <input
               type="text"
               placeholder="Search..."
-              className="w-full px-4 py-2 bg-cloud-gray outline-none text-primary-text rounded-l-full"
+              style={{ backgroundColor: 'var(--cloud-gray)' }}
+              className="w-full px-4 py-2 outline-none text-primary-text rounded-l-full"
               value={searchInput}
               onChange={(e) => setSearchInput(e.target.value)}
             />
             <button
               type="submit"
-              className="px-4 py-2 text-slate-gray hover:text-primary-text rounded-r-full"
+              style={{ color: 'var(--slate-gray)' }}
+              className="px-4 py-2 hover:opacity-80 rounded-r-full"
             >
               <FaSearch />
             </button>

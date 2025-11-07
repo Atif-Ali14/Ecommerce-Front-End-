@@ -27,14 +27,15 @@ export default function ProductModal({ product, onClose }) {
       onClick={onClose}
     >
       <div
-        style={{ backgroundColor: 'var(--pure-white)' }}
         className="p-6 rounded-lg max-w-md w-full mx-4 relative shadow-xl animate-fadeIn scale-100"
+        style={{ backgroundColor: 'var(--pure-white)' }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* ❌ Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-slate-gray text-lg font-bold hover:text-primary-text"
+          style={{ color: 'var(--slate-gray)' }}
+          className="absolute top-3 right-3 text-lg font-bold hover:opacity-80"
         >
           ✕
         </button>
@@ -60,10 +61,14 @@ export default function ProductModal({ product, onClose }) {
 
         {/* 🛒 Add to Cart Button */}
         <button
-          className={`mt-6 w-full py-2 rounded-lg transition-all ${
+          style={{
+            backgroundColor: isInCart ? 'var(--emerald-green)' : 'var(--shopora-blue)',
+            color: 'var(--pure-white)'
+          }}
+          className={`mt-3 px-4 py-2 rounded-md transition-all ${
             isInCart
-              ? "bg-emerald-green text-pure-white cursor-default"
-              : "bg-shopora-blue text-pure-white hover:bg-midnight-navy"
+              ? "cursor-default"
+              : "hover:opacity-90"
           }`}
           onClick={handleAddToCart}
           disabled={isInCart}

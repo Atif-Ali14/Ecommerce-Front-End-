@@ -39,6 +39,7 @@ export default function LoginModal({ onClose, onSignUpClick }) {
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            style={{ backgroundColor: 'var(--cloud-gray)', color: 'var(--primary-text)' }}
             className="w-full border rounded-md p-2"
             required
           />
@@ -49,6 +50,7 @@ export default function LoginModal({ onClose, onSignUpClick }) {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            style={{ backgroundColor: 'var(--cloud-gray)', color: 'var(--primary-text)' }}
             className="w-full border rounded-md p-2"
             required
           />
@@ -74,9 +76,12 @@ export default function LoginModal({ onClose, onSignUpClick }) {
           </div>
 
           {/* Login Button */}
-          <button className="w-full bg-shopora-blue text-pure-white py-2 rounded-md font-bold hover:bg-opacity-90">
-            Login
-          </button>
+          <button 
+          style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }}
+          className="w-full py-2 rounded-md font-bold hover:opacity-90"
+        >
+          Login
+        </button>
         </form>
 
         {/* Sign Up Link */}
