@@ -23,23 +23,24 @@ export const Categories = [
 export const mockData = [
   {
     id: 1,
-    name: "Stylish Bag",
-    category: "Fashion",
-    price: 29.99,
-    rating: 4.3,
-    image: bag,
-    description:
-      "Lightweight and stylish bag suitable for daily use and travel.",
+    name: "Dove Beauty Bar",
+    category: "Beauty",
+    price: 4.49,
+    rating: 4.4,
+    image: dove,
+    description: "Moisturizing soap that keeps skin soft, fresh, and hydrated.",
   },
   {
     id: 2,
-    name: "Classic Cap",
-    category: "Fashion",
-    price: 12.49,
-    rating: 4.1,
-    image: cap,
-    description: "Comfortable cotton cap with adjustable strap for all fits.",
+    name: "Hair Shampoo",
+    category: "Beauty",
+    price: 7.99,
+    rating: 4.4,
+    image: shampo,
+    description:
+      "Refreshing shampoo formulated to strengthen and nourish hair.",
   },
+
   {
     id: 3,
     name: "Wireless Headphone",
@@ -50,8 +51,28 @@ export const mockData = [
     description:
       "High-quality bluetooth headphones with deep bass and long battery life.",
   },
+
   {
     id: 4,
+    name: "Stylish Bag",
+    category: "Fashion",
+    price: 29.99,
+    rating: 4.3,
+    image: bag,
+    description:
+      "Lightweight and stylish bag suitable for daily use and travel.",
+  },
+  {
+    id: 5,
+    name: "Classic Cap",
+    category: "Fashion",
+    price: 12.49,
+    rating: 4.1,
+    image: cap,
+    description: "Comfortable cotton cap with adjustable strap for all fits.",
+  },
+  {
+    id: 6,
     name: "Comfort Sandals",
     category: "Fashion",
     price: 19.99,
@@ -61,7 +82,7 @@ export const mockData = [
       "Soft and durable sandals perfect for walking and casual wear.",
   },
   {
-    id: 5,
+    id: 7,
     name: "Casual Shirt",
     category: "Fashion",
     price: 24.99,
@@ -71,7 +92,7 @@ export const mockData = [
       "Stylish breathable cotton shirt ideal for summer and outings.",
   },
   {
-    id: 6,
+    id: 8,
     name: "Premium Watch",
     category: "Fashion",
     price: 149.99,
@@ -80,33 +101,15 @@ export const mockData = [
     description:
       "Luxury wristwatch with premium design and long battery performance.",
   },
+
   {
-    id: 7,
-    name: "Sports Bat",
-    category: "Sports",
-    price: 34.99,
-    rating: 4.2,
-    image: bat,
-    description:
-      "Strong cricket bat designed for better performance and durability.",
-  },
-  {
-    id: 8,
+    id: 9,
     name: "Dairy Milk",
     category: "Food",
     price: 2.99,
     rating: 4.2,
     image: dairymilk,
     description: "Smooth and creamy milk chocolate made with fresh cocoa.",
-  },
-  {
-    id: 9,
-    name: "Dove Beauty Bar",
-    category: "Beauty",
-    price: 4.49,
-    rating: 4.4,
-    image: dove,
-    description: "Moisturizing soap that keeps skin soft, fresh, and hydrated.",
   },
   {
     id: 10,
@@ -117,6 +120,7 @@ export const mockData = [
     image: kitkat,
     description: "Crispy wafer covered with delicious milk chocolate.",
   },
+
   {
     id: 11,
     name: "Kitchen Knife",
@@ -126,14 +130,15 @@ export const mockData = [
     image: knife,
     description: "Sharp and durable stainless steel knife for smooth cutting.",
   },
+
   {
     id: 12,
-    name: "Hair Shampoo",
-    category: "Beauty",
-    price: 7.99,
-    rating: 4.4,
-    image: shampo,
+    name: "Sports Bat",
+    category: "Sports",
+    price: 34.99,
+    rating: 4.2,
+    image: bat,
     description:
-      "Refreshing shampoo formulated to strengthen and nourish hair.",
+      "Strong cricket bat designed for better performance and durability.",
   },
 ];
