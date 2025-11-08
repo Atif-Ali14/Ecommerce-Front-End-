@@ -20,7 +20,7 @@ export default function Footer() {
         <div>
           <h2 className="text-2xl font-bold mb-4">Shopora</h2>
           <p style={{ color: "var(--slate-gray)" }} className="text-sm">
-            Your one-stop shop for latest products with best offers.
+            our trusted online destination for quality products, great deals, and a seamless shopping experience. Shop smarter, live better — only at Shopora.
           </p>
         </div>
 

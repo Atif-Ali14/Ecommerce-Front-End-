@@ -45,7 +45,8 @@ export default function Cart() {
         </h2>
         <Link
           to="/"
-          className="text-white bg-gray-800 hover:bg-blue-700 px-6 py-3 rounded-md transition-all duration-200"
+          style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }}
+          className="px-6 py-3 rounded-md hover:opacity-90 transition-all"
         >
           Go Shopping
         </Link>
@@ -132,7 +133,8 @@ export default function Cart() {
             </button>
             <Link
               to="/checkout"
-              className="bg-black text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-all duration-200"
+              style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }}
+              className="px-6 py-2 rounded-md hover:opacity-90 transition-all"
             >
               Proceed to Checkout
             </Link>
@@ -153,7 +155,8 @@ export default function Cart() {
 
           <button
             onClick={() => setShowModal(true)}
-            className="mt-4 bg-black text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-all duration-200"
+            style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }}
+            className="mt-4 px-4 py-2 rounded-md hover:opacity-90 transition-all"
           >
             Change Address
           </button>

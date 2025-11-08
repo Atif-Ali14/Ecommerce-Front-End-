@@ -41,7 +41,7 @@ export default function ChangeAddress({ currentAddress, onSave, onClose }) {
           </button>
           <button
             onClick={() => onSave(newAddress)}
-            style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }}
+            style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }}
             className="px-4 py-2 rounded-md hover:opacity-90"
           >
             Save

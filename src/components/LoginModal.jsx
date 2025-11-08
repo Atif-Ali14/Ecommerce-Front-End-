@@ -77,7 +77,7 @@ export default function LoginModal({ onClose, onSignUpClick }) {
 
           {/* Login Button */}
           <button 
-          style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }}
+          style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }}
           className="w-full py-2 rounded-md font-bold hover:opacity-90"
         >
           Login

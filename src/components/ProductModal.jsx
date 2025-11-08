@@ -62,7 +62,7 @@ export default function ProductModal({ product, onClose }) {
         {/* 🛒 Add to Cart Button */}
         <button
           style={{
-            backgroundColor: isInCart ? 'var(--emerald-green)' : 'var(--shopora-blue)',
+            backgroundColor: isInCart ? 'var(--emerald-green)' : 'var(--sunrise-orange)',
             color: 'var(--pure-white)'
           }}
           className={`mt-3 px-4 py-2 rounded-md transition-all ${

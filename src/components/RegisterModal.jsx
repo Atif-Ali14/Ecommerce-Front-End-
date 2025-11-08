@@ -77,7 +77,7 @@ export default function RegisterModal({ onClose, onLoginClick }) {
           />
 
           {/* Register button */}
-          <button style={{ backgroundColor: 'var(--shopora-blue)', color: 'var(--pure-white)' }} className="w-full py-2 rounded-md hover:opacity-90">
+          <button type="submit" style={{ backgroundColor: 'var(--sunrise-orange)', color: 'var(--pure-white)' }} className="w-full py-2 rounded-md hover:opacity-90 transition-all">
             Register
           </button>
         </form>

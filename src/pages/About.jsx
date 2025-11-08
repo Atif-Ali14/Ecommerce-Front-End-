@@ -11,21 +11,17 @@ export default function About() {
       {/* Content Section */}
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 text-gray-700 space-y-4">
         <p>
-          Welcome to <span className="font-semibold">Shopora</span> — your
-          one-stop destination for quality products at the best prices. We
-          believe in offering a seamless shopping experience with fast delivery
-          and secure payment options.
+          Welcome to <b>Shopora</b>, your one-stop online store for everything — from electronics and fashion to home essentials and more. 
+          We bring together quality products, affordable prices, and a smooth shopping experience to make online shopping simple and enjoyable.
         </p>
 
         <p>
-          Our mission is to bring you a wide range of products including
-          electronics, fashion, home essentials, beauty items, and more — all in
-          one store.
+          At Shopora, we focus on trust, convenience, and customer satisfaction. Every item is carefully selected from reliable sellers, ensuring you get the best value with every purchase. 
+          Whether you’re upgrading your tech, refreshing your wardrobe, or finding something for your home, Shopora has it all.
         </p>
 
         <p>
-          We value our customers and continuously work to provide the best
-          service possible. Your satisfaction is our top priority!
+          Shop with confidence, explore new collections, and enjoy a seamless experience — only at Shopora, where quality meets convenience.
         </p>
 
         <p className="font-semibold text-gray-900">
