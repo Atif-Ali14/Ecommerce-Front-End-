@@ -1,15 +1,15 @@
-import bag from "../assets/images/products/bag.png";
-import cap from "../assets/images/products/cap.png";
-import headphone from "../assets/images/products/headphone.png";
-import sandle from "../assets/images/products/sandle.png";
-import shirt from "../assets/images/products/shirt.png";
-import watch from "../assets/images/products/watch.png";
-import bat from "../assets/images/products/bat.png";
-import dairymilk from "../assets/images/products/dairymilk.png";
-import dove from "../assets/images/products/dove.png";
-import kitkat from "../assets/images/products/kitkat.png";
-import knife from "../assets/images/products/knife.png";
-import shampo from "../assets/images/products/shampo.png";
+import bag from "../assets/images/products/bag.jpg";
+import cap from "../assets/images/products/cap.jpg";
+import headphone from "../assets/images/products/headphone.jpg";
+import sandle from "../assets/images/products/sandals.jpg";
+import shirt from "../assets/images/products/shirt.jpg";
+import watch from "../assets/images/products/watch.jpg";
+import bat from "../assets/images/products/bat.jpg";
+import dairymilk from "../assets/images/products/dairymilk.jpg";
+import dove from "../assets/images/products/dove.jpg";
+import kitkat from "../assets/images/products/kitkat.jpg";
+import knife from "../assets/images/products/knife.jpg";
+import shampo from "../assets/images/products/shampoo.jpg";
 
 export const Categories = [
   "Electronics",
