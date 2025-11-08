@@ -43,6 +43,14 @@ export default function NavBar() {
 
   return (
     <header className="shadow-sm">
+      {/* Top Brand Line - Centered Shop Name */}
+      <div
+        style={{ backgroundColor: 'var(--midnight-navy)', color: 'var(--pure-white)' }}
+        className="px-6 py-2 text-center"
+      >
+        <span className="text-5xl font-bold">Shopora</span>
+      </div>
+
       {/* Top Navbar - Logo, Page Links, Search Bar */}
       <nav style={{ backgroundColor: 'var(--midnight-navy)', color: 'var(--pure-white)' }} className="px-6 py-4">
         <div className="flex items-center justify-between">
