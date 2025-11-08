@@ -38,7 +38,7 @@ export default function CategorySection() {
               style={{ backgroundColor: `var(--${item.bg.replace('bg-','').replace('-','-')})` }}
               className={`rounded-xl h-[280px] flex 
               justify-between items-center px-6 cursor-pointer 
-              shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl`}
+              shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl overflow-hidden`}
             >
               {/* Text */}
               <div>
@@ -52,7 +52,7 @@ export default function CategorySection() {
               <img
                 src={item.img}
                 alt={item.title}
-                className="h-[260px] object-contain drop-shadow-md"
+                className="h-full w-1/2 object-cover drop-shadow-md"
               />
             </div>
           </Link>
